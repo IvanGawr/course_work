@@ -54,9 +54,13 @@
                 </div>
             </section>
 
-            <marquee behavior="scroll" direction="right" class="main-ticker">
-                    <span class="main-ticker-artist">ARTISTS</span> 
-            </marquee>
+            <div class="main-ticker">
+                <marquee behavior="scroll" direction="right" class="main-ticker-artist">
+                    <span class="main-ticker-artist__item">ARTISTS</span> 
+                </marquee>
+            </div>
+
+            
             
 
             <section class="main-artists">
@@ -105,10 +109,26 @@
 
                 <div class="main-story-content">
                     <div class="main-story-content-buttons">
-                        <div class="main-story-content-buttons__item active">Our founders</div>
-                        <div class="main-story-content-buttons__item">Partners</div>
-                        <div class="main-story-content-buttons__item">The future</div>
+                        <label class="main-story-content-buttons-check">
+                            <div class="main-story-content-buttons-check-back">
+                                <input type="radio" name="Level" class="main-story-content-buttons-check-back__item">
+                                <span class="main-story-content-buttons-check-back__text">Our founders</span>
+                            </div>
+                        </label>
+                        <label class="main-story-content-buttons-check">
+                            <div class="main-story-content-buttons-check-back">
+                                <input type="radio" name="Level" class="main-story-content-buttons-check-back__item">
+                                <span class="main-story-content-buttons-check-back__text">Partners</span>
+                            </div>
+                        </label>
+                        <label class="main-story-content-buttons-check">
+                            <div class="main-story-content-buttons-check-back">
+                                <input type="radio" name="Level" class="main-story-content-buttons-check-back__item">
+                                <span class="main-story-content-buttons-check-back__text">The future</span>
+                            </div>
+                        </label>
                     </div>
+
                     <div class="main-story-content-description">
                         <div class="main-story-content-description__img"><img src="./assets/Main/story.png" alt="photo"></div>
                         <div class="main-story-content-description-text">
@@ -121,15 +141,70 @@
                 </div>
            
             </section>
-
-            <!-- сделать параллакс эффект черно-белый артист kekw -->
+            
+            <div class="main-parallax"></div>
+            
+            <div class="main-test">
+                <div class="main-test-one top">
+                    <div class="main-test-two">
+                        <div class="main-test-three">
+                            <div class="main-test-four">
+                                <div class="main-test-five">
+                                    <div class="main-test-six">
+                                        <div class="main-test-seven">
+                                            <div class="main-test-eight">
+                                                <div class="main-test-nine"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-test-one mid">
+                    <div class="main-test-two">
+                        <div class="main-test-three">
+                            <div class="main-test-four">
+                                <div class="main-test-five">
+                                    <div class="main-test-six">
+                                        <div class="main-test-seven">
+                                            <div class="main-test-eight">
+                                                <div class="main-test-nine"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-test-one bot">
+                    <div class="main-test-two">
+                        <div class="main-test-three">
+                            <div class="main-test-four">
+                                <div class="main-test-five">
+                                    <div class="main-test-six">
+                                        <div class="main-test-seven">
+                                            <div class="main-test-eight">
+                                                <div class="main-test-nine"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section class="main-roadmap">
+                <div class="main-roadmap-topic">ROADMAP</div>
                 <div class="main-roadmap-phase">
                     <div class="main-roadmap-phase-topic">
-                        <div class="main-roadmap-phase-topic__number">1</div>
+                        <p class="main-roadmap-phase-topic__number">1</p>
                         <p class="main-roadmap-phase-topic__status">Phase 1 - completed</p>
-                        <h4 class="main-roadmap-phase-topic__name">Spring 2022 - pre launch</h4>
+                        <p class="main-roadmap-phase-topic__name">Spring 2022 - pre launch</p>
                     </div>
                     <div class="main-roadmap-phase-content">
                         <div class="main-roadmap-phase-content-task">
@@ -146,11 +221,13 @@
                     </div>
                 </div>
 
+                <div class="main-roadmap-line"></div>
+
                 <div class="main-roadmap-phase">
                     <div class="main-roadmap-phase-topic">
-                        <div class="main-roadmap-phase-topic__number">2</div>
+                        <p class="main-roadmap-phase-topic__number">2</p>
                         <p class="main-roadmap-phase-topic__status">Phase 2</p>
-                        <h4 class="main-roadmap-phase-topic__name">Summer 2022 - GROWTH</h4>
+                        <p class="main-roadmap-phase-topic__name">Summer 2022 - GROWTH</p>
                     </div>
                     <div class="main-roadmap-phase-content">
                         <div class="main-roadmap-phase-content-task">
@@ -168,11 +245,13 @@
                     </div>
                 </div>
 
+                <div class="main-roadmap-line"></div>
+
                 <div class="main-roadmap-phase">
                     <div class="main-roadmap-phase-topic">
-                        <div class="main-roadmap-phase-topic__number">3</div>
+                        <p class="main-roadmap-phase-topic__number">3</p>
                         <p class="main-roadmap-phase-topic__status">Phase 3</p>
-                        <h4 class="main-roadmap-phase-topic__name">Summer 2022 - YOuR new stage</h4>
+                        <p class="main-roadmap-phase-topic__name">Summer 2022 - YOuR new stage</p>
                     </div>
                     <div class="main-roadmap-phase-content">
                         <div class="main-roadmap-phase-content-task">
@@ -191,9 +270,12 @@
             </section>
 
 
-            <marquee behavior="scroll" direction="right" class="main-ticker">
-
-           </marquee>
+            <div class="main-ticker">
+                <marquee behavior="scroll" direction="right" class="main-ticker-logo">
+                    <div class="main-ticker-logo__item">LOGOHOLDER</div> 
+                    <div class="main-ticker-logo__item">LOGOHOLDER</div> 
+                </marquee>
+            </div>
             
            <section class="main-faq">
             <div class="main-faq-topic">
@@ -206,22 +288,22 @@
             </div>
             <div class="main-faq-answer">
                 <div class="main-faq-answer-item">
-                    <h4  class="main-faq-answer-item__topic">How can I get into Meta RL?</h4>
+                    <p  class="main-faq-answer-item__topic">How can I get into Meta RL?</p>
                     <p  class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
                 </div>
 
                 <div class="main-faq-answer-item">
-                    <h4  class="main-faq-answer-item__topic">When is the NFT launch?</h4>
+                    <p  class="main-faq-answer-item__topic">When is the NFT launch?</p>
                     <p  class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
                 </div>
 
                 <div class="main-faq-answer-item">
-                    <h4  class="main-faq-answer-item__topic">Can I hold META WAVE NFT as an investment?</h4>
+                    <p  class="main-faq-answer-item__topic">Can I hold META WAVE NFT as an investment?</p>
                     <p  class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
                 </div>
 
                 <div class="main-faq-answer-item">
-                    <h4  class="main-faq-answer-item__topic">Where can I get a WAVE NFT?</h4>
+                    <p  class="main-faq-answer-item__topic">Where can I get a WAVE NFT?</p>
                     <p  class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
                 </div>
 
@@ -269,8 +351,8 @@
 
             <section id="discord" class="main-discord">
                 <div class="main-discord-left">
-                    <h3 class="main-discord-left__topic">JOIN OUR</h3>
-                    <h3 class="main-discord-left__topic green">DISCORD</h3>
+                    <p class="main-discord-left__topic">JOIN OUR</p>
+                    <p class="main-discord-left__topic green">DISCORD</p>
                     <p class="main-discord-left__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     <button class="main-discord-left__button"><img src="./assets/Main/discord.png" alt="discord">Join Discord</button>
                 </div>

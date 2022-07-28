@@ -60,8 +60,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            
-            
 
             &-record{
                 max-width: 30%;
@@ -154,13 +152,22 @@
         }
 
     &-ticker{
-        margin: 115px 0 140px;
         &-artist{
+            margin: 115px 0 140px;
             font-family:"audiowide";
             font-size: 8rem;
             line-height: 9rem;
             color: #ffffff;
-
+        }
+        &-logo{
+            margin: 115px 0 140px;
+            font-family:"audiowide";
+            font-size: 3.5rem;
+            line-height: 4rem;
+            color: #ffffff;
+            &__item{
+                padding-top: 50px;
+            }
         }
     }
 
@@ -206,26 +213,42 @@
             flex-direction: row;
             justify-content: flex-start;
             padding-left: 40px;
+           
             &-buttons{
                 font-family: "dmmono";
                 font-size: 1.6rem;
                 line-height: 1.6rem;
                 color: white;
+                    
+                &-check{
+                        
+                    &-back{
+                        display: flex;
+                        width: 280px;
+                        height: 72px;
+                        
+                            &__item{
+                                appearance: none;
+                                -webkit-appearance: none;
+                            }
     
-                &__item{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 280px;
-                    height: 72px;
-                }
+                            &__text{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                padding-left: 30px;
+                                width: 100%;
+                                height: 100%;
+                            }
     
-                .active{
-                    background-color: #222222;
-                    color:#8DFD1B;
-                }
+                            &__item:checked + &__text{
+                                background-color: #222222;
+                                color: #8DFD1B;
+                            }
+                        }    
+                    }
             }
-    
+
             &-description{
                 display: flex;
                 flex-direction: row;
@@ -260,5 +283,274 @@
                 }
             }
         }   
+    }
+
+    &-parallax{
+        margin-top: 120px;    
+        height: 240px;
+        background-image: url(/src/assets/Main/parallax.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-test{
+        display: grid;
+        grid-template-columns: repeat(2, 33%);
+        grid-template-rows: repeat(8, 12.5%);
+        overflow: hidden;
+        position: absolute;
+        max-height: 2000px;
+        
+        .top{
+            grid-column: 1;
+            grid-row: 2;
+            place-self: center;
+        }
+
+        .mid{
+            grid-column: 3;
+            grid-row: 4;
+            place-self: center;
+        }
+
+        .bot{
+            grid-column: 1;
+            grid-row: 6;
+            place-self: center;
+        }
+        
+        &-one{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 8s;
+        }
+        &-two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 630px;
+            height: 630px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 7s;
+        }
+
+        &-three{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 560px;
+            height: 560px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 6s;
+        }
+
+        &-four{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 490px;
+            height: 490px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 5s;
+        }
+
+        &-five{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 4s;
+        }
+
+        &-six{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 3s;
+        }
+
+        &-seven{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 2s;
+        }
+
+        &-eight{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            border: 1px solid rgba(141, 253, 27, 0)rgba(141, 253, 27, 0);
+            animation: one 9s infinite ease-in-out 1s;
+        }
+        
+        &-nine{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 1px solid #8DFD1B;
+            animation: one 9s infinite ease-in-out;
+        }
+
+        @keyframes one {
+            0%{
+                border: 1px solid rgba(141, 253, 27, 0); 
+            }
+            10%{
+                border: 1px solid rgba(141, 253, 27, 0.2); 
+            }
+            20%{
+                border: 1px solid rgba(141, 253, 27, 0.4); 
+            }
+            30%{
+                border: 1px solid rgba(141, 253, 27, 0.6); 
+            }
+            40%{
+                border: 1px solid rgba(141, 253, 27, 0.8); 
+            }
+            50%{
+                border: 1px solid rgba(141, 253, 27, 1); 
+            }
+            60%{
+                border: 1px solid rgba(141, 253, 27, 0.8); 
+            }
+            70%{
+                border: 1px solid rgba(141, 253, 27, 0.6); 
+            }
+            80%{
+                border: 1px solid rgba(141, 253, 27, 0.4); 
+            }
+            90%{
+                border: 1px solid rgba(141, 253, 27, 0.2); 
+            }
+            100%{
+                border: 1px solid rgba(141, 253, 27, 0); 
+            }   
+        }
+
+    }
+
+    &-roadmap{
+        position: relative;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        &-topic{
+            font-family: "audiowide";
+            font-size: 3.8rem;
+            line-height: 4.5rem;
+            color: white;
+            margin-bottom: 70px;
+        }
+
+        &-line{
+            height: 40px;
+            border-left:1px solid #8DFD1B;
+        }
+
+        &-phase{
+            background-color: #222222;
+            border: 1px solid #8DFD1B;
+            width: 40%;         
+            
+            &-topic{
+                font-family: "dmmono";
+                display: grid;
+                grid-template-areas:'number status'
+                                    'number name'  ;
+                column-gap: 15px;
+                justify-content: start;
+                align-items: center;
+                border-bottom:1px solid #8DFD1B;
+                padding: 15px 0 15px 15px;
+
+                &__number{
+                    width: 45px;
+                    height: 45px;
+                    background-color: #8DFD1B;
+                    font-size: 2.8rem;
+                    color: #000000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area: number;
+                }
+
+                &__status{
+                    font-size: 0.8rem;
+                    color: #8DFD1B;
+                    grid-area: status;
+                }
+
+                &__name{
+                    font-size: 1.6rem;
+                    line-height: 2.7rem;
+                    color: white;
+                    text-transform: uppercase;
+                    grid-area: name;
+                }
+            }
+
+            &-content{
+                font-family: "inter";
+                font-size: 1.2rem;
+                color: #ffffff;
+                display: grid;
+                grid-template-areas:'task pic'
+                                    'result pic';
+                padding: 35px 15px;
+                &-task{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    padding-bottom: 20px;
+                    gap: 10px;
+                    grid-area: task;
+                }
+
+                &-result{
+                    max-width: 80%;
+                    grid-area: result;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    line-height: 2.6rem;
+                }
+
+                &-pic{
+                    grid-area: pic;
+                }
+            }
+
+        }
     }
 }
