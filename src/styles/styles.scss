@@ -88,7 +88,13 @@
                     color: black;
                     height: 10%;
                     max-width: 50%;
+                }
 
+                &__button:hover{
+                    border:1px solid #8DFD1B;
+                    color: #8DFD1B;
+                    background-color: #000000;
+                    transition: 2s;
                 }
             }
 
@@ -148,6 +154,13 @@
                     max-width: 50%;
                     height: 10%;
                 }
+
+                &__button:hover{
+                    color: black;
+                    background-color: #8DFD1B;
+                    transition: 2s;
+                }
+
             }
         }
 
@@ -264,7 +277,6 @@
                 max-width: 65%;
                 padding: 60px 90px 80px 60px;
                 gap: 40px;
-    
                 &-text{
                     display: flex;
                     flex-direction: column;
@@ -688,6 +700,14 @@
                 padding: 13px 30px;
                 max-width: 60%;
             }
+
+            &__button:hover{
+                border:1px solid #8DFD1B;
+                color: #8DFD1B;
+                background-color: #000000;
+                transition: 2s;
+            }
+
         }
     }
 }
@@ -749,4 +769,9 @@
         }
     }
 
+}
+
+a:hover{
+    color: #8DFD1B;
+    transition: 1s;
 }
