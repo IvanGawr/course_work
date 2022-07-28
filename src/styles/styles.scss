@@ -169,6 +169,13 @@
                 padding-top: 50px;
             }
         }
+        &-team{
+            margin: 110px 0 130px;
+            font-family:"audiowide";
+            font-size: 8rem;
+            line-height: 9rem;
+            color: #ffffff;
+        }
     }
 
     &-artists{
@@ -550,7 +557,196 @@
                     grid-area: pic;
                 }
             }
-
         }
     }
+
+    &-faq{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &-topic{
+                font-family: "audiowide";
+                font-size: 3.8rem;
+                line-height: 4.5rem;
+                text-transform: uppercase;
+                color: white;
+                .grey{
+                    color: #A8A8A8;
+                }
+            }
+    
+            &-pic{
+
+            }
+        }
+
+        &-answer{
+            max-width: 45%;
+            max-height: 600px;
+            overflow: scroll;
+            overflow-x: hidden;
+            &-item{
+                background-color: #222222;
+                padding: 25px 35px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &__topic{
+                    font-family: "dmmono";
+                    font-style: 1.4rem;
+                    line-height: 2.4rem;
+                    color:#FFFFFF;
+                    width: 100%;
+                }
+
+                &__article{
+                    font-family: "inter";
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    color: #C4C4C4;
+                }
+            }
+        }
+    }
+
+    &-team{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        &-profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: #FFFFFF;
+            width: 25%;
+            
+            &__name{
+                font-family: "dmmono";
+                font-size: 2.1rem;    
+            }
+            &__role{
+                font-family: "dmmono";
+                font-size: 1.1rem;
+                color: #8DFD1B;
+            }
+            &-links{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+            &__quote{
+                font-family: "inter";
+                font-size: 1.2rem;
+                text-align: center;
+                max-width: 70%;
+            }
+        }
+    }
+
+    &-discord{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 150px;
+        padding-bottom: 120px ;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 30%;
+            gap: 10%;
+            &__topic{
+                font-family: "audiowide";
+                font-size: 5rem;
+                color: #FFFFFF;
+            }
+            .green{
+                color: #8DFD1B;
+            }
+            &__article{
+                font-family: "inter";
+                font-size: 1.6rem;
+                color: #FFFFFF;
+                max-width: 90%;
+            }
+            &__button{
+                background-color: #8DFD1B;
+                color: black;
+                font-family: "dmmono";
+                font-size: 1.6rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                padding: 13px 30px;
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+.footer{
+    max-width: 1440px;
+    height: 350px;
+    background-color: #42006A;
+    &-container{
+        height: 100%;
+        padding: 100px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: "dmmono";
+        color: #FFFFFF;
+        
+        &-logo{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            font-size: 1.3rem;
+            &__item{
+                align-self: end;
+            }
+            &__txt{
+                grid-row-start: 3;
+            }
+        }
+
+        &-sections{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 1.6rem;
+        }
+
+        &-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 1.6rem;
+        }
+
+        &-by{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            font-size: 1.6rem;
+        }
+
+        &-social{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 12px;
+            align-items: end;
+            font-size: 1.6rem;
+        }
+    }
+
 }

@@ -278,18 +278,21 @@
             </div>
             
            <section class="main-faq">
-            <div class="main-faq-topic">
-                <div class="main-faq-topic__item"></div>
-                <div class="main-faq-topic__item"></div>
-                <div class="main-faq-topic__item"></div>
+            <div class="main-faq-left">
+                <div class="main-faq-left-topic">
+                    <div class="main-faq-left-topic__item">Frequently</div>
+                    <div class="main-faq-left-topic__item grey">asked</div>
+                    <div class="main-faq-left-topic__item">questions</div>
+                </div>    
+                <div class="main-faq-left-pic">
+                    <img src="./assets/Main/faq.png" alt="wave.nft" class="main-faq-left-pic__item">
+                </div>  
             </div>
-            <div class="main-faq-pic">
-                <img src="./assets/Main/faq.png" alt="wave.nft" class="main-faq-pic__item">
-            </div>
+
             <div class="main-faq-answer">
                 <div class="main-faq-answer-item">
-                    <p  class="main-faq-answer-item__topic">How can I get into Meta RL?</p>
-                    <p  class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    <div class="main-faq-answer-item__topic">How can I get into Meta RL?</div>
+                    <div class="main-faq-answer-item__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
                 </div>
 
                 <div class="main-faq-answer-item">
@@ -310,9 +313,11 @@
             </div>
            </section>
 
-           <marquee behavior="scroll" direction="right" class="main-ticker">
-
-            </marquee>
+            <div class="main-ticker">
+                <marquee behavior="scroll" direction="right" class="main-ticker-team">
+                    <span class="main-ticker-team__item">TEAM</span> 
+                </marquee>
+            </div>
 
             <section class="main-team">
                 <div class="main-team-profile">
@@ -351,8 +356,10 @@
 
             <section id="discord" class="main-discord">
                 <div class="main-discord-left">
-                    <p class="main-discord-left__topic">JOIN OUR</p>
-                    <p class="main-discord-left__topic green">DISCORD</p>
+                    <div class="main-discord-left__topic">
+                        <p>JOIN OUR</p>
+                        <p class="green">DISCORD</p>
+                    </div>
                     <p class="main-discord-left__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     <button class="main-discord-left__button"><img src="./assets/Main/discord.png" alt="discord">Join Discord</button>
                 </div>
@@ -364,18 +371,30 @@
 
         <footer class="footer">
             <div class="footer-container">
-                <div class="footer-container__item"><img src="./assets/header/logo_footer.png" alt="logo"></div>
-                <div class="footer-container__item">2022 All rights reserved</div>
-                <div class="footer-container__item">Wave NFTs</div>
-                <div class="footer-container__item">Stories</div>
-                <div class="footer-container__item">Contact</div>
-                <div class="footer-container__item">Licencing</div>
-                <div class="footer-container__item">Style Guide</div>
-                <div class="footer-container__item">Changelog</div>
-                <div class="footer-container__item">Powered by Webflow</div>
-                <div class="footer-container__item">Developed by Anastasiia G.</div>
-                <div class="footer-container__item">
-                    <img src="./assets/header/Twitter.png" alt="Twitter">
+                <div class="footer-container-logo">
+                    <div class="footer-container-logo__item"><img src="./assets/header/logo_footer.png" alt="logo"></div>
+                    <div class="footer-container-logo__txt">© 2022 All rights reserved</div>
+                </div>
+
+                <div class="footer-container-sections">
+                    <div class="footer-container-sections__item">Wave NFTs</div>
+                    <div class="footer-container-sections__item">Stories</div>
+                    <div class="footer-container-sections__item">Contact</div>
+                </div>
+
+                <div class="footer-container-links">
+                    <div class="footer-container-links__item">Licencing</div>
+                    <div class="footer-container-links__item">Style Guide</div>
+                    <div class="footer-container-links__item">Changelog</div>
+                </div>
+
+                <div class="footer-container-by">
+                    <div class="footer-container-by__item">Powered by Webflow</div>
+                    <div class="footer-container-by__item">Developed by Anastasiia G.</div>
+                </div>
+
+                <div class="footer-container-social">
+                    <img src="./assets/header/twitter.png" alt="Twitter">
                     <img src="./assets/header/discord.png" alt="discord">
                     <img src="./assets/header/yt.png" alt="YouTube">
                     <img src="./assets/header/telegram.png" alt="telegram">
