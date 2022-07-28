@@ -12,15 +12,15 @@
         <header class="header">
             <div class="header-left">
                 <img src="./assets/header/LOGO.png" alt="Logo" class="header-left__logo">
-                <a href="#" class="header-left__link">Wave NFTs</a>
-                <a href="#" class="header-left__link">Stories</a>
-                <a href="#" class="header-left__link">Contact</a>
+                <a href="#wavenft" class="header-left__link">Wave NFTs</a>
+                <a href="#story" class="header-left__link">Stories</a>
+                <a href="#discord" class="header-left__link">Contact</a>
             </div>
             <div class="header-right">
-                <a href="#" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/Twitter.png" alt="Twitter" class="header-right-social__item"></div></a>
-                <a href="#" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/discord.png" alt="Discord" class="header-right-social__item"></div></a>
-                <a href="#" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/yt.png" alt="YouTube" class="header-right-social__item"></div></a>
-                <a href="#" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/telegram.png" alt="Telegram" class="header-right-social__item"></div></a>
+                <a href="https://twitter.com" target="_blank" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/twitter.png" alt="Twitter" class="header-right-social__item"></div></a>
+                <a href="https://discord.com" target="_blank" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/discord.png" alt="Discord" class="header-right-social__item"></div></a>
+                <a href="https://www.youtube.com" target="_blank" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/yt.png" alt="YouTube" class="header-right-social__item"></div></a>
+                <a href="https://web.telegram.org" target="_blank" class="header-right-social__link"><div class="header-right-social__back"><img src="./assets/header/telegram.png" alt="Telegram" class="header-right-social__item"></div></a>
             </div>
         </header>
         
@@ -28,31 +28,36 @@
         <main class="main">
             <section class="main-meta">
                 <div class="main-meta-record">
-                    <h1 class="main-meta-record__topic">META RECORD LABEL</h1>
+                    <p class="main-meta-record__topic">META RECORD LABEL</p>
                     <p class="main-meta-record__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     <button class="main-meta-record__button">Learn More</button>
                 </div>
 
-                <div  class="main-meta-wave">
-                    <img src="./assets/Main/3cards.png" alt="presentation"   class="main-meta-wave__item">
+                <div class="main-meta-collection">
+                    <img src="./assets/Main/3cards.png" alt="presentation"   class="main-meta-collection__item">
                 </div>
 
-                <div  class="main-meta-collection">
-                    <img src="./assets/Main/wave_blue.png" alt="wave_nft"  class="main-meta-collection__item">
+                <div class="main-meta-wave">
+                    <p class="main-meta-wave__topic">WAVE NFT</p>
+                    <p class="main-meta-wave__topic topic-grey">COLLECTION OF 777</p>
+                    <img src="./assets/Main/wave_blue.png" alt="wave_nft"  class="main-meta-wave__item">
                 </div>
 
-                <div class="main-meta-eco">
-                    <h3 class="main-meta-eco__topic">META WAVE NFT is your pass to Meta Record Label ecosystem. It is your access to our industry experts, established artists, and partners.</h3>
-                    <p class="main-meta-eco__article">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
-                    <p class="main-meta-eco__article">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
-                    <p class="main-meta-eco__article">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                <div id="wavenft" class="main-meta-eco">
+                    <p class="main-meta-eco__topic">META WAVE NFT is your pass to Meta Record Label ecosystem. It is your access to our industry experts, established artists, and partners.</p>
+                    <div class="main-meta-eco-article">
+                        <p class="main-meta-eco-article__item">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                        <p class="main-meta-eco-article__item">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                        <p class="main-meta-eco-article__item">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                    </div>
                     <button class="main-meta-eco__button">Get One On OpenSea</button>
                 </div>
             </section>
 
             <marquee behavior="scroll" direction="right" class="main-ticker">
-                 <img src="./assets/Main/Artists.png" alt="artists" class="main-ticker__item">
+                    <span class="main-ticker-artist">ARTISTS</span> 
             </marquee>
+            
 
             <section class="main-artists">
                 <div class="main-artists-profile">
@@ -92,21 +97,29 @@
 
             </section>
             
-            <section class="main-story">
-                <div class="main-story-buttons">
-                    <div class="main-story-buttons__item active">Our founders</div>
-                    <div class="main-story-buttons__item">Partners</div>
-                    <div class="main-story-buttons__item">The future</div>
+            <section id="story" class="main-story">
+                <div class="main-story-topic">
+                    <span class="main-story-topic__white">MRL.</span>
+                    <span class="main-story-topic__grey">THE STORY.</span>
                 </div>
-                <div class="main-story-description">
-                    <div class="main-story-description__img"><img src="./assets/Main/story.png" alt="photo"></div>
-                    <div class="main-story-description-text">
-                        <h2 class="main-story-description-text__topic">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</h2>
-                        <p class="main-story-description-text_article">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
-                        <p class="main-story-description-text_article">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
-                        <p class="main-story-description-text_article">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+
+                <div class="main-story-content">
+                    <div class="main-story-content-buttons">
+                        <div class="main-story-content-buttons__item active">Our founders</div>
+                        <div class="main-story-content-buttons__item">Partners</div>
+                        <div class="main-story-content-buttons__item">The future</div>
                     </div>
-                </div>             
+                    <div class="main-story-content-description">
+                        <div class="main-story-content-description__img"><img src="./assets/Main/story.png" alt="photo"></div>
+                        <div class="main-story-content-description-text">
+                            <p class="main-story-content-description-text__topic">META record label was founded by Shaky Lake and Baky Hike in 2020 business accelerator.</p>
+                            <p class="main-story-content-description-text__article">Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet dictum sit amet justo. Tortor aliquam nulla facilisi cras.</p>
+                            <p class="main-story-content-description-text__article">Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed tempus. Enim sit amet venenatis urna cursus eget.</p>
+                            <p class="main-story-content-description-text__article">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
+                        </div>
+                    </div>  
+                </div>
+           
             </section>
 
             <!-- сделать параллакс эффект черно-белый артист kekw -->
@@ -179,8 +192,7 @@
 
 
             <marquee behavior="scroll" direction="right" class="main-ticker">
-                <div><img src="./assets/Main/logoholder.png" alt="logoholder" class="main-ticker__item"></div>
-                <div><img src="./assets/Main/logoholder.png" alt="logoholder" class="main-ticker__item"></div>
+
            </marquee>
             
            <section class="main-faq">
@@ -217,7 +229,7 @@
            </section>
 
            <marquee behavior="scroll" direction="right" class="main-ticker">
-            <div><img src="./assets/Main/team.png" alt="logoholder" class="main-ticker__item"></div>
+
             </marquee>
 
             <section class="main-team">
@@ -255,7 +267,7 @@
                 </div>
             </section>
 
-            <section class="main-discord">
+            <section id="discord" class="main-discord">
                 <div class="main-discord-left">
                     <h3 class="main-discord-left__topic">JOIN OUR</h3>
                     <h3 class="main-discord-left__topic green">DISCORD</h3>

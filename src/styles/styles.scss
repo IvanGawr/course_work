@@ -1,4 +1,264 @@
+@font-face {
+    font-family: "AudioWide";
+    src: url(/src/assets/fonts/audiowide_regular.woff2) format("woff2"),
+    url(/src/assets/fonts/audiowide_regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DMmono";
+    src: url(/src/assets/fonts/DMMono-Regular.woff2) format("woff2"),
+    url(/src/assets/fonts/DMMono-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/src/assets/fonts/Inter-Regular.woff2) format("woff2"),
+    url(/src/assets/fonts/Inter-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header{
+    max-width: 1440px;
+    max-height: 100px;
+    padding: 50px 140px 0;
+    background-color: black;
+    font-family: "DMmono";
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+        &-left{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            gap: 40px;
+        }
+
+        &-right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            
+        }   
+}
+
 .main{
-    background-color: aqua;
-    width: 1440px;
+    max-width: 1440px;
+    background-color: black;
+        
+        &-meta{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            
+
+            &-record{
+                max-width: 30%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                &__topic{
+                    font-family: "Audiowide";
+                    font-size: 5.1rem;
+                    line-height: 6rem;
+                }
+
+                &__article{
+                    font-family: "Inter";
+                    font-size: 1.6rem;
+                    max-width: 80%;
+                    line-height: 2.5rem;
+                }
+
+                &__button{
+                    background-color: #8DFD1B;
+                    font-family: "DMmono";
+                    font-size: 1.6rem;
+                    color: black;
+                    height: 10%;
+                    max-width: 50%;
+
+                }
+            }
+
+            &-collection{
+                margin-bottom: 125px;
+            }
+
+            &-wave{
+                font-family:"audiowide";
+                font-size: 3.8rem;
+                line-height: 4.5rem;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .topic-grey{
+                    color: #A8A8A8;
+                    max-width: 90%;
+                    padding-bottom: 40px;
+                }
+
+            }
+
+            &-eco{
+                max-width: 40%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                &__topic{
+                    font-family: "dmmono";
+                    font-size: 2.1rem;
+                    color: #8DFD1B;
+                    line-height: 3.2rem;
+                    border-left: 1px solid #8DFD1B;
+                    padding-left: 22px;
+                }
+
+                &-article{
+                    font-style: "Inter";
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                    max-width: 84%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+
+                &__button{
+                    background-color: black;
+                    border: 1px solid #8DFD1B;
+                    color: #ffffff;
+                    font-family: "dmmono";
+                    font-size: 1.6rem;
+                    max-width: 50%;
+                    height: 10%;
+                }
+            }
+        }
+
+    &-ticker{
+        margin: 115px 0 140px;
+        &-artist{
+            font-family:"audiowide";
+            font-size: 8rem;
+            line-height: 9rem;
+            color: #ffffff;
+
+        }
+    }
+
+    &-artists{
+        padding-left: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 21%);
+        // grid-column-gap: 60px;
+        grid-row-gap: 80px;
+        margin-bottom: 250px;
+        justify-items: start;
+        
+        &-profile{
+            &__name{
+                font-family: "dmmono";
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #ffffff;
+                text-align: center;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    &-story{
+        &-topic{
+            font-family: "audiowide";
+            font-size: 4rem;
+            line-height: 4.5rem;
+            text-align: center;
+            padding-bottom: 60px;
+
+            &__white{
+                color: #ffffff;
+            }
+            &__grey{
+                color: #A8A8A8;
+            }
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 40px;
+            &-buttons{
+                font-family: "dmmono";
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: white;
+    
+                &__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 280px;
+                    height: 72px;
+                }
+    
+                .active{
+                    background-color: #222222;
+                    color:#8DFD1B;
+                }
+            }
+    
+            &-description{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color: #222222;
+                max-width: 65%;
+                padding: 60px 90px 80px 60px;
+                gap: 40px;
+    
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    &__topic{
+                        font-family: "dmmono";
+                        font-size: 2.1rem;
+                        color: #8DFD1B;
+                        line-height: 3.2rem;
+                        border-left: 1px solid #8DFD1B;
+                        padding-left: 22px;
+                    }
+
+                    &__article{
+                        font-family: "inter";
+                        font-size: 1.6rem;
+                        line-height: 2.5rem;
+                        color: #ffffff;
+                        max-width: 95%;
+                        
+                    }
+                }
+            }
+        }   
+    }
 }
